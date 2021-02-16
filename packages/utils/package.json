@@ -6,6 +6,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "clean": "rimraf dist *.tsbuildinfor",
+    "build": "tsc -b ."
+  },
   "devDependencies": {
     "@types/jest": "^26.0.20",
     "jest": "^26.6.3"
