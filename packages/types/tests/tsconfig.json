@@ -3,6 +3,8 @@
   "compilerOptions": {
     "lib": ["DOM", "ES2018"],
     "types": ["jest"],
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
     "baseUrl": "..",
     "noEmit": true
   },
