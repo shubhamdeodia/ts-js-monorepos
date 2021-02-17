@@ -2,6 +2,9 @@
   "extends": "../tsconfig.settings.json",
   "compilerOptions": {
     "composite": true,
+    "types": ["node", "jest"],
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
     "outDir": "dist",
     "rootDir": "src"
   },

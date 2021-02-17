@@ -8,10 +8,26 @@
   },
   "scripts": {
     "clean": "rimraf dist *.tsbuildinfor",
-    "build": "tsc -b ."
+    "build": "tsc -b .",
+    "lint": "eslint src --ext js,ts",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "@shlack/utils": "./src",
+      "@shlack/types": "../types/src"
+    },
+    "preset": "ts-jest",
+    "testEnvironment": "node"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
-    "jest": "^26.6.3"
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.20.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.1"
   }
 }
