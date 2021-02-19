@@ -9,7 +9,26 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build": "yarn lerna run build --concurrency 4",
+    "clean": "yarn lerna run clean --concurrency 4",
+    "lint": "yarn lerna run lint --stream --concurrency 1",
+    "test": "yarn lerna run test --stream --concurrency 1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/config-lerna-scopes": "^11.0.0",
+    "commitlint-config-jira": "^1.4.1",
+    "commitlint-plugin-jira-rules": "^1.4.0",
+    "husky": "^5.0.9",
+    "lerna": "^3.22.1",
+    "lerna-changelog": "^1.0.1",
     "rimraf": "^3.0.2"
   }
 }
