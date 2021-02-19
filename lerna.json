@@ -7,5 +7,10 @@
     "useWorkspaces": true,
     "nohoist": [
         "parcel-bundler"
-    ]
+    ],
+    "command": {
+        "publish": {
+          "conventionalCommits": true
+        }
+      }
 }
