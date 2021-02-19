@@ -1,11 +1,12 @@
 {
   "name": "@shlack/utils",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
-  }, "scripts": {
+  },
+  "scripts": {
     "clean": "rimraf dist *.tsbuildinfor",
     "build": "tsc -b .",
     "lint": "eslint src --ext js,ts",
