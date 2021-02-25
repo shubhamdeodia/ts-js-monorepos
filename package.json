@@ -7,13 +7,13 @@
   "license": "BSD-2-Clause",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "./packages/*"
   ],
   "scripts": {
-    "build": "yarn lerna run build --concurrency 4",
-    "clean": "yarn lerna run clean --concurrency 4",
-    "lint": "yarn lerna run lint --stream --concurrency 1",
-    "test": "yarn lerna run test --stream --concurrency 1"
+    "build": "npx lerna run build --concurrency 4",
+    "clean": "npx lerna run clean --concurrency 4",
+    "lint": "npx lerna run lint --stream --concurrency 1",
+    "test": "npx lerna run test --stream --concurrency 1"
   },
   "husky": {
     "hooks": {
